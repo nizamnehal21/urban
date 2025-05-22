@@ -2,72 +2,62 @@ import React from 'react'
 
 
 const Footer = () => {
-    return (
-       <footer className="bg-black-50 text-gray-700 py-10 px-6">
-  {/* Logo */}
-  <div className="mb-10 flex justify-center md:ml-25 md:justify-start">
-    <img src="/image/urban_logo.webp" className="h-8" alt="Urban Logo" />
-  </div>
-
-  {/* Grid Sections */}
-  <div className="max-w-7xl mx-auto grid grid-cols-1 gap-10 border-b border-gray-300 pb-10 md:grid-cols-4 md:ml-25">
-    {/* Company */}
-    <div>
-      <h3 className="font-semibold text-lg mb-4">Company</h3>
-      <ul className="space-y-2 text-sm">
-        <li>About us</li>
-        <li>Investor Relations</li>
-        <li>Terms & conditions</li>
-        <li>Privacy policy</li>
-        <li>Anti-discrimination policy</li>
-        <li>ESG Impact</li>
-        <li>Careers</li>
-      </ul>
-    </div>
-
-    {/* For Customers */}
-    <div>
-      <h3 className="font-semibold text-lg mb-4">For customers</h3>
-      <ul className="space-y-2 text-sm">
-        <li>UC reviews</li>
-        <li>Categories near you</li>
-        <li>Contact us</li>
-      </ul>
-    </div>
-
-    {/* For Professionals */}
-    <div>
-      <h3 className="font-semibold text-lg mb-4">For professionals</h3>
-      <p className="text-sm mb-6">Register as a professional</p>
-    </div>
-
-    {/* Social Links and Apps */}
-    <div>
-      <h3 className="font-semibold text-lg mb-4">Social links</h3>
-      <div className="flex justify-start space-x-4 mb-4">
-        {[...Array(4)].map((_, i) => (
-          <a href="#" key={i}>
-            <svg className="w-5" viewBox="0 0 24 24" fill="#0F0F0F" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22.991 3.95a1 1 0 00-1.51-.86..." />
-            </svg>
-          </a>
-        ))}
+  return (
+    <footer className="bg-black-50 text-gray-700 py-10 px-6">
+      <div className="mb-10 flex justify-center md:ml-25 md:justify-start">
+        <img src="/image/urban_logo.webp" className="h-8" alt="Urban Logo" />
       </div>
-      <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 gap-4">
-        <a href="#"><img src="/image/ap.webp" className="h-8" alt="App Store" /></a>
-        <a href="#"><img src="/image/gp.webp" className="h-8" alt="Google Play" /></a>
+
+      <div className="max-w-7xl mx-auto grid grid-cols-1 gap-10 border-b border-gray-300 pb-10 md:grid-cols-4 md:ml-25">
+        <div>
+          <h3 className="font-semibold text-lg mb-4">Company</h3>
+          <ul className="space-y-2 text-sm">
+            <li>About us</li>
+            <li>Investor Relations</li>
+            <li>Terms & conditions</li>
+            <li>Privacy policy</li>
+            <li>Anti-discrimination policy</li>
+            <li>ESG Impact</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="font-semibold text-lg mb-4">For customers</h3>
+          <ul className="space-y-2 text-sm">
+            <li>UC reviews</li>
+            <li>Categories near you</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="font-semibold text-lg mb-4">For professionals</h3>
+          <p className="text-sm mb-6">Register as a professional</p>
+        </div>
+
+        <div>
+          <h3 className="font-semibold text-lg mb-4">Social links</h3>
+          <div className="flex space-x-4 mb-4">
+            <a href=""><svg className="w-5" width="100%" height="100%" viewBox="0 0 24 24" fill="#0F0F0F" xmlns="http://www.w3.org/2000/svg"><path d="M22.991 3.95a1 1 0 00-1.51-.86 7.48 7.48 0 01-1.874.794 5.152 5.152 0 00-3.374-1.242 5.232 5.232 0 00-5.223 5.063 11.032 11.032 0 01-6.814-3.924 1.012 1.012 0 00-.857-.365 1 1 0 00-.785.5 5.276 5.276 0 00-.242 4.769l-.002.001a1.041 1.041 0 00-.496.89c-.002.147.007.294.027.439a5.185 5.185 0 001.568 3.312.998.998 0 00-.066.77 5.204 5.204 0 002.362 2.922 7.465 7.465 0 01-3.59.448A1 1 0 001.45 19.3a12.942 12.942 0 007.01 2.061 12.788 12.788 0 0012.465-9.363c.353-1.183.533-2.411.535-3.646l-.001-.2a5.77 5.77 0 001.532-4.202zm-3.306 3.212a.995.995 0 00-.234.702c.01.165.009.331.009.488a10.822 10.822 0 01-.454 3.08 10.685 10.685 0 01-10.546 7.93c-.859 0-1.715-.1-2.55-.301a9.481 9.481 0 002.942-1.564 1 1 0 00-.602-1.786 3.208 3.208 0 01-2.214-.935 4.95 4.95 0 00.445-.105 1 1 0 00-.08-1.943 3.197 3.197 0 01-2.25-1.726c.18.025.363.04.545.046a1.02 1.02 0 00.984-.696 1 1 0 00-.4-1.137 3.196 3.196 0 01-1.419-2.871 13.014 13.014 0 008.21 3.48 1.02 1.02 0 00.817-.36 1 1 0 00.206-.867 3.152 3.152 0 01-.087-.729 3.23 3.23 0 014.505-2.962c.404.176.767.433 1.066.756a.993.993 0 00.921.298 9.27 9.27 0 001.212-.322 6.683 6.683 0 01-1.026 1.524z" fill="#0F0F0F"></path></svg></a>
+            <a href=""><svg className="w-5" width="100%" height="100%" viewBox="0 0 24 24" fill="#0F0F0F" xmlns="http://www.w3.org/2000/svg"><path d="M22.991 3.95a1 1 0 00-1.51-.86 7.48 7.48 0 01-1.874.794 5.152 5.152 0 00-3.374-1.242 5.232 5.232 0 00-5.223 5.063 11.032 11.032 0 01-6.814-3.924 1.012 1.012 0 00-.857-.365 1 1 0 00-.785.5 5.276 5.276 0 00-.242 4.769l-.002.001a1.041 1.041 0 00-.496.89c-.002.147.007.294.027.439a5.185 5.185 0 001.568 3.312.998.998 0 00-.066.77 5.204 5.204 0 002.362 2.922 7.465 7.465 0 01-3.59.448A1 1 0 001.45 19.3a12.942 12.942 0 007.01 2.061 12.788 12.788 0 0012.465-9.363c.353-1.183.533-2.411.535-3.646l-.001-.2a5.77 5.77 0 001.532-4.202zm-3.306 3.212a.995.995 0 00-.234.702c.01.165.009.331.009.488a10.822 10.822 0 01-.454 3.08 10.685 10.685 0 01-10.546 7.93c-.859 0-1.715-.1-2.55-.301a9.481 9.481 0 002.942-1.564 1 1 0 00-.602-1.786 3.208 3.208 0 01-2.214-.935 4.95 4.95 0 00.445-.105 1 1 0 00-.08-1.943 3.197 3.197 0 01-2.25-1.726c.18.025.363.04.545.046a1.02 1.02 0 00.984-.696 1 1 0 00-.4-1.137 3.196 3.196 0 01-1.419-2.871 13.014 13.014 0 008.21 3.48 1.02 1.02 0 00.817-.36 1 1 0 00.206-.867 3.152 3.152 0 01-.087-.729 3.23 3.23 0 014.505-2.962c.404.176.767.433 1.066.756a.993.993 0 00.921.298 9.27 9.27 0 001.212-.322 6.683 6.683 0 01-1.026 1.524z" fill="#0F0F0F"></path></svg></a>
+            <a href=""><svg className="w-5" width="100%" height="100%" viewBox="0 0 24 24" fill="#0F0F0F" xmlns="http://www.w3.org/2000/svg"><path d="M22.991 3.95a1 1 0 00-1.51-.86 7.48 7.48 0 01-1.874.794 5.152 5.152 0 00-3.374-1.242 5.232 5.232 0 00-5.223 5.063 11.032 11.032 0 01-6.814-3.924 1.012 1.012 0 00-.857-.365 1 1 0 00-.785.5 5.276 5.276 0 00-.242 4.769l-.002.001a1.041 1.041 0 00-.496.89c-.002.147.007.294.027.439a5.185 5.185 0 001.568 3.312.998.998 0 00-.066.77 5.204 5.204 0 002.362 2.922 7.465 7.465 0 01-3.59.448A1 1 0 001.45 19.3a12.942 12.942 0 007.01 2.061 12.788 12.788 0 0012.465-9.363c.353-1.183.533-2.411.535-3.646l-.001-.2a5.77 5.77 0 001.532-4.202zm-3.306 3.212a.995.995 0 00-.234.702c.01.165.009.331.009.488a10.822 10.822 0 01-.454 3.08 10.685 10.685 0 01-10.546 7.93c-.859 0-1.715-.1-2.55-.301a9.481 9.481 0 002.942-1.564 1 1 0 00-.602-1.786 3.208 3.208 0 01-2.214-.935 4.95 4.95 0 00.445-.105 1 1 0 00-.08-1.943 3.197 3.197 0 01-2.25-1.726c.18.025.363.04.545.046a1.02 1.02 0 00.984-.696 1 1 0 00-.4-1.137 3.196 3.196 0 01-1.419-2.871 13.014 13.014 0 008.21 3.48 1.02 1.02 0 00.817-.36 1 1 0 00.206-.867 3.152 3.152 0 01-.087-.729 3.23 3.23 0 014.505-2.962c.404.176.767.433 1.066.756a.993.993 0 00.921.298 9.27 9.27 0 001.212-.322 6.683 6.683 0 01-1.026 1.524z" fill="#0F0F0F"></path></svg></a>
+            <a href=""><svg className="w-5" width="100%" height="100%" viewBox="0 0 24 24" fill="#0F0F0F" xmlns="http://www.w3.org/2000/svg"><path d="M22.991 3.95a1 1 0 00-1.51-.86 7.48 7.48 0 01-1.874.794 5.152 5.152 0 00-3.374-1.242 5.232 5.232 0 00-5.223 5.063 11.032 11.032 0 01-6.814-3.924 1.012 1.012 0 00-.857-.365 1 1 0 00-.785.5 5.276 5.276 0 00-.242 4.769l-.002.001a1.041 1.041 0 00-.496.89c-.002.147.007.294.027.439a5.185 5.185 0 001.568 3.312.998.998 0 00-.066.77 5.204 5.204 0 002.362 2.922 7.465 7.465 0 01-3.59.448A1 1 0 001.45 19.3a12.942 12.942 0 007.01 2.061 12.788 12.788 0 0012.465-9.363c.353-1.183.533-2.411.535-3.646l-.001-.2a5.77 5.77 0 001.532-4.202zm-3.306 3.212a.995.995 0 00-.234.702c.01.165.009.331.009.488a10.822 10.822 0 01-.454 3.08 10.685 10.685 0 01-10.546 7.93c-.859 0-1.715-.1-2.55-.301a9.481 9.481 0 002.942-1.564 1 1 0 00-.602-1.786 3.208 3.208 0 01-2.214-.935 4.95 4.95 0 00.445-.105 1 1 0 00-.08-1.943 3.197 3.197 0 01-2.25-1.726c.18.025.363.04.545.046a1.02 1.02 0 00.984-.696 1 1 0 00-.4-1.137 3.196 3.196 0 01-1.419-2.871 13.014 13.014 0 008.21 3.48 1.02 1.02 0 00.817-.36 1 1 0 00.206-.867 3.152 3.152 0 01-.087-.729 3.23 3.23 0 014.505-2.962c.404.176.767.433 1.066.756a.993.993 0 00.921.298 9.27 9.27 0 001.212-.322 6.683 6.683 0 01-1.026 1.524z" fill="#0F0F0F"></path></svg></a>
+          </div>
+          <div className="flex flex-col max-md:flex-row max-md:items-center max-md:space-x-4 gap-4">
+            <a href="#"><img src="/image/ap.webp" className="h-8" alt="App Store" /></a>
+            <a href="#"><img src="/image/gp.webp" className="h-8" alt="Google Play" /></a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  {/* Footer bottom note */}
-  <div className="max-w-7xl mx-auto text-xs text-gray-500 pt-6 text-center md:text-left md:ml-25">
-    <p className="mb-1">* As on December 31, 2024</p>
-    <p>© Copyright 2025 Urban Company Ltd. All rights reserved. | CIN: U74140DL2014PTC274413</p>
-  </div>
-</footer>
+      <div className="max-w-7xl mx-auto text-xs text-gray-500 pt-6 text-center md:text-left md:ml-25">
+        <p className="mb-1">* As on December 31, 2024</p>
+        <p>© Copyright 2025 Urban Company Ltd. All rights reserved. | CIN: U74140DL2014PTC274413</p>
+      </div>
+    </footer>
 
-    );
+  );
 };
 
 export default Footer;

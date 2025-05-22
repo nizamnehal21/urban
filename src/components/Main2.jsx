@@ -1,16 +1,16 @@
 import React from 'react'
 
-const Main = () => {
-    return (
-        <div>
-            <main className='pt-30'>
+const Main2 = () => {
+  return (
+    <div>
+       <main className='pt-30'>
                 <div className='flex max-md:flex-col max-md:gap-4 justify-evenly items-center'>
                     <div>
-                        <h1 className='home text-4xl text-[rgb(15,15,15)] font-semibold mb-15'>Home services at your <br />doorstep</h1>
+                        <h1 className='home text-4xl text-[rgb(15,15,15)] font-semibold mb-15'>Beauty services at your<br />doorstep</h1>
                         <div className='w-[28vw] max-md:w-auto border border-1 h-90 rounded-[10px] '>
                             <h2 className='text-[rgb(84,84,84)] text-[20px] font-semibold pt-[20px] pl-[20px]'>What are you looking for?</h2>
                             <div className='flex pt-[20px] pl-[20px] gap-4'>
-                                <div><img src="/image/ac.webp" className='w-30 h-15 rounded-lg' alt="" />
+                                <div><img src="/image/img14.webp" className='w-30 h-15 rounded-lg' alt="" />
                                     <p className='text-xs'>Ac & Appliance Repair</p>
                                 </div>
                                 <div><img src="/image/ac.webp" className='w-30 h-15 rounded-lg' alt="" />
@@ -72,9 +72,9 @@ const Main = () => {
                 </div>
 
                 <div className='flex gap-4 ml-40 mt-15 max-md:flex-col max-md:justify-center max-md:items-center max-md:ml-0'>
-                    <img src="/image/img2.webp" className='w-100' alt="" />
-                    <img src="/image/img2.webp" className='w-100' alt="" />
-                    <img src="/image/img2.webp" className='w-100' alt="" />
+                    <img src="/image/img15.webp" className='w-100' alt="" />
+                    <img src="/image/img15.webp" className='w-100' alt="" />
+                    <img src="/image/img15.webp" className='w-100' alt="" />
                 </div>
 
                 <div className='flex flex-col gap-6 ml-40 mt-15 max-md:ml-0 max-md:justify-center max-md:items-center'>
@@ -369,8 +369,8 @@ const Main = () => {
                 </div>
 
             </main>
-        </div>
-    )
+    </div>
+  )
 }
 
-export default Main
+export default Main2

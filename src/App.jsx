@@ -1,9 +1,12 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import  Navbar  from './components/Navbar'
-import Footer from './components/Footer'
-import Main from './components/Main'
+import Home from './home/Home'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Beauty from './beauty/Beauty'
+import Wall from './wall/Wall'
+import Native from './native/Native'
+import Cart from './cart/Cart'
+
+
 
 // import './App.css'
 
@@ -12,9 +15,15 @@ function App() {
 
   return (
     <>
-      {/* <Navbar /> */}
-      <Main />
-      {/* <Footer /> */}
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/beauty' element={<Beauty/>}/>
+      <Route path='/wall' element={<Wall/>}/>
+      <Route path='/native' element={<Native/>}/>
+      <Route path='/cart' element={<Cart/>}/>
+    </Routes>
+      </BrowserRouter>
     </>
   )
 }
